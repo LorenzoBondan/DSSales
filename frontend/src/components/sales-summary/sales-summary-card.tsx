@@ -1,5 +1,3 @@
-
-import {ReactComponent as Icon} from '../../assets/images/icone-1.svg';
 import './styles.css';
 
 type Props = {
