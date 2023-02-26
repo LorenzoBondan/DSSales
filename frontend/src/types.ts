@@ -38,3 +38,19 @@ export type PieChartConfig = {
     series: number[];
 }
 
+//tabela
+export type Sale = {
+    id: number;
+    date: string;
+    volume: number;
+    total: number;
+    gender: Gender;
+    categoryName : string;
+    paymentMethod: string;
+    storeName: string;
+}
+
+export type SalesResponse = {
+    content: Sale[];
+}
+

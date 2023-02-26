@@ -35,7 +35,7 @@ function App() {
 
     })
     .catch(() => {
-        console.log('Error to fetch sales by date');
+        console.log('Error to fetch sales by store');
     });
   }, [params])
 
@@ -49,7 +49,7 @@ function App() {
 
     })
     .catch(() => {
-        console.log('Error to fetch sales by date');
+        console.log('Error to fetch sales by payment method');
     });
   }, [params])
 
@@ -75,7 +75,7 @@ function App() {
           />
         </div>
 
-        <SalesTable/>
+        <SalesTable filterData={filterData}/>
         
       </div>
     </>

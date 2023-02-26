@@ -2,8 +2,9 @@ import { ApexOptions } from 'apexcharts';
 
 export const buildPieChartConfig = (labels: string[] = [], name: string) => {
   return {
+
     labels,
-    noData: {
+    noData: { // o que aparece quando dados não são encontrados
       text: 'Sem resultados',
       align: 'center',
       verticalAlign: 'middle',
@@ -15,7 +16,9 @@ export const buildPieChartConfig = (labels: string[] = [], name: string) => {
         fontFamily: 'Roboto, sans-serif'
       }
     },
+
     colors: ['#3e82f7', '#04d182', '#ffc107', '#ff6b72'],
+
     legend: {
       show: true,
       floating: false,
@@ -30,14 +33,16 @@ export const buildPieChartConfig = (labels: string[] = [], name: string) => {
         vertical: 5 
       }
     },
+
     dataLabels: {
       enabled: false
     },
+
     plotOptions: {
       pie: {
         size: 400,
         donut: {
-          size: '85%',
+          size: '85%', // espessura do gráfico
           labels: {
             show: true,
             name: {
@@ -61,8 +66,10 @@ export const buildPieChartConfig = (labels: string[] = [], name: string) => {
         }
       }
     },
+
     chart: {
       height: '400px'
     }
+
   } as ApexOptions;
 };
