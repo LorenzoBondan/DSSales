@@ -12,7 +12,7 @@ type Props = {
 const extraParams = {
     page: 0,
     size: 12,
-    sort : 'date, desc'
+    sort : 'date,desc'
 }
 
 const SalesTable = ( {filterData} : Props ) => {
